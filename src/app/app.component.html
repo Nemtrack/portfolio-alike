@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div
+      *ngFor="let project of projectsGit"
+      class="card col-sm-6 col-md-4 col-lg-3 m-2 text-center"
+    >
+      <div>
+        <img
+          class="card-img-top m-3"
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          style="max-width: 100px"
+        />
+
+        <div class="card-body">
+          <h2 class="card-title">{{ project.name }}</h2>
+        </div>
+      </div>
+      <a
+        href="{{ project.link }}"
+        class="btn btn-primary stretched-link"
+        style="opacity: 0"
+      ></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div
+        *ngFor="let project of projectsWeb"
+        class="card col-xs-6 col-sm-6 col-md-4 col-lg-3 m-2 text-center"
+      >
+        <div>
+          <img
+            class="card-img-top m-3"
+            src="https://c1.klipartz.com/pngpicture/126/492/sticker-png-email-symbol-web-hosting-service-web-server-computer-servers-internet-hosting-service-web-design-computer-network-computer-software.png"
+            style="max-width: 100px"
+          />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">{{ project.name }}</h2>
+        </div>
+        <a
+          href="{{ project.link }}"
+          class="btn btn-primary stretched-link"
+          style="opacity: 0"
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

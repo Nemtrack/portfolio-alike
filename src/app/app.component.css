@@ -1,0 +1,7 @@
+.card {
+  transition: filter 0.5s;
+}
+
+.card:hover {
+  filter: invert(100%);
+}
